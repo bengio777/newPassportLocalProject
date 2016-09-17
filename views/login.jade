@@ -1,5 +1,8 @@
 extends layout
 block content
+  h1 Please Login to our app
+  br
+  h1= message
   form(action="/login" method="post")
     h2  username
     input(name="username" type=text)
@@ -7,3 +10,5 @@ block content
     input(name="password" type=text)
     br
     button log me in
+    br
+    a(href="/register") register for our app
